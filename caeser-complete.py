@@ -48,19 +48,8 @@ codeLen = len(caes)
 must use append since it cannot assign to non-existing index--cannot assign
 to empty indices
 """
-#for c in range(codeLen):
-#    print("the loop is on: ", c)
-#    if (minLow <= asc[c] <= maxLow) or (minUp <= asc[c] <= maxUp):
-#        print("got to if")
-#        encode[counter] = caes[c]
-#        counter = counter + 1
-#        encode[counter] = '-'
-#        counter = counter + 1
-#    else:
-#        print("else")
-#        encode[counter] = ' '
-#        counter = counter + 1
 
+# print things out nicely
 for c in range(codeLen):
     if (minLow <= asc[c] <= maxLow) or (minUp <= asc[c] <= maxUp):
        encode.append(caesOff[c])
